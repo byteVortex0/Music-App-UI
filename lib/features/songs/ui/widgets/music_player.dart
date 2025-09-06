@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:music_app/core/utils/images_manager.dart';
+import 'package:music_app/features/songs/ui/widgets/audio_controller.dart';
 
 import '../../../../core/utils/style_manager.dart';
 
@@ -66,31 +67,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
                       ],
                     ),
                     SizedBox(height: 10.h),
-
-                    Directionality(
-                      textDirection: TextDirection.ltr,
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: SliderTheme(
-                              data: SliderTheme.of(context).copyWith(
-                                trackHeight: 5,
-                                thumbShape: const RoundSliderThumbShape(
-                                  enabledThumbRadius: 6,
-                                ),
-                                activeTrackColor: Colors.white,
-                                inactiveTrackColor: Colors.white.withValues(
-                                  alpha: 0.3,
-                                ),
-                                thumbColor: Colors.white,
-                              ),
-                              child: Slider(value: 0, onChanged: (val) {}),
-                            ),
-                          ),
-                          Text('-1:40', style: StyleManager.white12Regular),
-                        ],
-                      ),
-                    ),
+                    AudioController(),
                     SizedBox(height: 10.h),
                   ],
                 ),

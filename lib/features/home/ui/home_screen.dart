@@ -27,15 +27,14 @@ class HomeScreen extends StatelessWidget {
             children: [
               SectionHeader(
                 title: 'إضافة اغنية جديدة',
-                action: CircleAvatar(
-                  radius: 20.r,
-                  backgroundColor: ColorsManager.primaryColor,
-                  child: IconButton(
-                    icon: const Icon(Icons.add),
-                    color: Colors.white,
-                    onPressed: () {
-                      context.pushNamed(AppRoutes.addSong);
-                    },
+                action: GestureDetector(
+                  onTap: () {
+                    context.pushNamed(AppRoutes.addSong);
+                  },
+                  child: CircleAvatar(
+                    radius: 20.r,
+                    backgroundColor: ColorsManager.primaryColor,
+                    child: Icon(Icons.add, color: Colors.white),
                   ),
                 ),
               ),

@@ -50,7 +50,7 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
               borderRadius: BorderRadius.circular(16),
               onTap: () {},
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 8.h),
+                padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 5.w),
                 decoration: BoxDecoration(
                   color:
                       isSelected
@@ -68,12 +68,15 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
                       color: isSelected ? Colors.white : ColorsManager.grey,
                     ),
                     SizedBox(height: 7.h),
-                    Text(
-                      item["label"] as String,
-                      style:
-                          isSelected
-                              ? StyleManager.white10Bold
-                              : StyleManager.gray10Regular,
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        item["label"] as String,
+                        style:
+                            isSelected
+                                ? StyleManager.white10Bold
+                                : StyleManager.gray10Regular,
+                      ),
                     ),
                   ],
                 ),
