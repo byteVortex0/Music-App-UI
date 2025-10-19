@@ -1,16 +1,25 @@
-# music_app
+# 🎵 Music App UI - Flutter Design
 
-A new Flutter project.
+**Music App UI** is a clean and modern Flutter design project that showcases a beautiful music player interface.  
+This project focuses purely on **UI and animations**, without backend or audio playback logic — perfect for portfolio presentation or design inspiration.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🎥 Demo
+[![Watch the demo](https://img.youtube.com/vi/15LIoAl8em8/0.jpg)](https://youtu.be/15LIoAl8em8)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features (Design Only)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 🎧 Elegant and minimal player screen  
+- 🖼️ Rotating album cover animation  
+- ⏯️ Interactive playback controls (Play / Pause / Next / Previous)  
+- 🎨 Custom color palette with gradients  
+- 🌙 Light mode 
+- 📊 Smooth progress bar animation  
+- 💖 Favorite button with scaling animation  
+- 📱 Fully responsive UI for all devices  
+
+
+
